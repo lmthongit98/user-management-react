@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UserReactHookForm from "../components/UserReactHookForm";
+import UserRHFMUIForm from "../components/UserRHFMUIForm";
 import UserList from "./components/UserList";
 
 export default function UsersFeature() {
@@ -35,11 +35,16 @@ export default function UsersFeature() {
 
   return (
     <div>
-      <UserReactHookForm
+      <UserRHFMUIForm
         onSubmitUpdate={onSubmitUpdate}
         updatedUser={updatedUser}
         onSubmit={onSubmit}
       />
+      {/* <UserReactHookForm
+        onSubmitUpdate={onSubmitUpdate}
+        updatedUser={updatedUser}
+        onSubmit={onSubmit}
+      /> */}
       {/* <UserForm
         onSubmitUpdate={onSubmitUpdate}
         updatedUser={updatedUser}
